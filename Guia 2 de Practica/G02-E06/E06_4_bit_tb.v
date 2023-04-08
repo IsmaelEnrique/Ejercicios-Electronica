@@ -39,7 +39,7 @@ initial begin
         test_a=i_b[3];
         test_b=i_b[2];
         test_c=i_b[1];
-        test_c=i_b[0];
+        test_d=i_b[0];
         
     end
 

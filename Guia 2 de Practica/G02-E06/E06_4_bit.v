@@ -11,6 +11,5 @@ module E06_4_bit(
     assign f = a;
     assign g = c;
     assign h = b|(c&(a|b));
-    // ta dudoso
 
 endmodule
