@@ -12,5 +12,5 @@ module E07_4_bit(
     assign z = (b&d)|(a&~c&d); // esta sin simplificar
     //assign f2 = (~a&~b&c)|(~a&b&c)|(~b&a); // tomo x,y,z como a,b,c < -- sin simplificar
     assign f2 = (~a&c)|(~b&a); // tomo x,y,z como a,b,c
-    
+
 endmodule
