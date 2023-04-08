@@ -13,5 +13,5 @@ module AB_4_bit (
     // assign s = a & b & c & d;
 
     //Inciso C
-    assign s = (a&~b&c&~d) | (~a&~b&~c&d) | (~a&~b&c&~d) | (~a&b&~c&~d) | (a&~b&~c&~d);
+    assign s = a&b;
 endmodule
