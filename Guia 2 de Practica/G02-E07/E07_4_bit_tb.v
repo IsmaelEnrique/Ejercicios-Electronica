@@ -12,7 +12,7 @@ always #0.5 clk=~clk;
 
 reg test_a, test_b, test_c,test_d; // datos de entrada al módulo.
 wire test_y,test_z,test_f2; // recibir datos de salida del módulo.
-
+//Tu señora esta re buena
 //-- Instanciamos la unidad a probar
 E07_4_bit UUT(
     .a(test_a),
