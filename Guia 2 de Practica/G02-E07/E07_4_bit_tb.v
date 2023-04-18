@@ -10,8 +10,8 @@ parameter DURATION = 10;
 reg clk =0;
 always #0.5 clk=~clk;
 
-reg test_a, test_b, test_c,test_d;
-wire test_y,test_z,test_f2;
+reg test_a, test_b, test_c,test_d; // datos de entrada al módulo.
+wire test_y,test_z,test_f2; // recibir datos de salida del módulo.
 
 //-- Instanciamos la unidad a probar
 E07_4_bit UUT(
@@ -24,8 +24,11 @@ E07_4_bit UUT(
     .f2(test_f2)
 );
 
-integer i;
-reg[3:0] i_b;
+
+// Esta línea define una variable reg llamada i_b como un vector de 4 bits 
+//que se utiliza para almacenar los valores del contador en el bucle
+reg[3:0] i_b; 
+integer i; // esta variable es para el for
 
 initial begin
     $dumpfile(`DUMPSTR(`VCD_OUTPUT));
