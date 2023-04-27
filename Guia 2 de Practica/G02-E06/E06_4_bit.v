@@ -9,7 +9,7 @@ module E06_4_bit(
 );
 
     assign f = a;
-    assign g = c;
-    assign h = b|(c&(a|b));
-
+    assign g = ~b&c;
+    //assign h = b|(c&(a|b));
+    assign h = (a&~b&(c|b&d)|~a&~b)&c;
 endmodule
