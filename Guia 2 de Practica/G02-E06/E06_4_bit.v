@@ -7,7 +7,7 @@ module E06_4_bit(
     output wire g,
     output wire h
 );
-
+ 
     assign f = a;
     assign g = ~b&c;
     //assign h = b|(c&(a|b));
